@@ -1,0 +1,130 @@
+.login-container {
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 797px;
+  height: 509px;
+  top: 257px;
+  left: 321px;
+  gap: 0px;
+  border-radius: 27.29px;
+  background: linear-gradient(
+    142.42deg,
+    rgba(114, 104, 117, 0.21) 1.79%,
+    rgba(117, 116, 117, 0) 100.42%
+  );
+
+  opacity: 0px;
+  color: white;
+  border-image-source: linear-gradient(
+    139.28deg,
+    rgba(19, 18, 18, 0.28) 2.05%,
+    rgba(53, 51, 51, 0) 92.82%
+  );
+
+  backdrop-filter: blur(116px);
+
+  -webkit-box-shadow: inset 1px -5px 37px 0px rgba(81, 81, 81, 0.4);
+  -moz-box-shadow: inset 1px -5px 37px 0px rgba(81, 81, 81, 0.4);
+  box-shadow: inset 1px -5px 37px 0px rgba(81, 81, 81, 0.4);
+}
+.form-card {
+  display: flex;
+  flex-direction: column;
+  top: 257px;
+  left: 321px;
+  gap: 0px;
+  border-radius: 27.29px;
+
+  opacity: 0px;
+}
+.form-card label {
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(242, 242, 242, 1);
+}
+.login-card h1 {
+  color: white;
+  font-size: inter;
+
+  margin-bottom: 20px;
+}
+
+.login-input {
+  width: 360px;
+  height: 40px;
+
+  border-radius: 39px;
+
+  opacity: 0px;
+  background: rgba(52, 50, 67, 1);
+
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid rgba(215, 223, 233, 1);
+
+  color: white;
+  font-size: 16px;
+}
+
+.login-input::placeholder {
+  color: #a1a1a1;
+}
+
+.password-toggle {
+  text-align: left;
+  margin-top: 10px;
+  color: white;
+  font-size: 14px;
+}
+
+.login-button {
+  background-color: #f5a623;
+  color: rgb(11, 11, 11);
+  border: none;
+  padding: 12px;
+  width: 100%;
+  font-size: 14px;
+  line-height: 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-weight: 700;
+}
+
+.login-button:hover {
+  background-color: #e6951f;
+}
+
+.error-message {
+  margin-top: 10px;
+  font-size: 14px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 16.41px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(239, 68, 68, 1);
+}
+.forget-password {
+  display: flex;
+}
+.password {
+  font-size: 14px;
+}

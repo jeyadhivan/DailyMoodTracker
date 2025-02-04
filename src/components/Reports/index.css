@@ -1,0 +1,74 @@
+.reports-container {
+  padding: 40px;
+  align-self: flex-start;
+  justify-self: flex-start;
+  width: 100%;
+}
+.para {
+  font-size: 20px;
+}
+.reports-title {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(255, 255, 255, 1);
+}
+.emoji-report {
+  display: flex;
+  color: white;
+  width: 100%;
+  justify-content: space-between;
+}
+.emoji-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    142.42deg,
+    rgba(114, 104, 117, 0.21) 1.79%,
+    rgba(117, 116, 117, 0) 100.42%
+  );
+
+  opacity: 0px;
+  color: white;
+  border-image-source: linear-gradient(
+    139.28deg,
+    rgba(19, 18, 18, 0.28) 2.05%,
+    rgba(53, 51, 51, 0) 92.82%
+  );
+
+  backdrop-filter: blur(116px);
+
+  -webkit-box-shadow: inset 1px -5px 37px 0px rgba(81, 81, 81, 0.4);
+  -moz-box-shadow: inset 1px -5px 37px 0px rgba(81, 81, 81, 0.4);
+  box-shadow: inset 1px -5px 37px 0px rgba(81, 81, 81, 0.4);
+
+  width: 249.6px;
+  height: 254px;
+  padding: 30px 80px 30px 80px;
+  gap: 24px;
+  border-radius: 27.29px;
+  border: 2.05px;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 48px;
+
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.emoji-icon {
+  width: 50px;
+  height: 50px;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0px 20px 0px;
+}

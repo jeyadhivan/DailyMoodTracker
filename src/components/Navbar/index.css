@@ -1,0 +1,44 @@
+.navbar {
+  align-self: flex-start;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+
+  height: 100px;
+  padding: 0px 80px 0px 80px;
+  background: rgba(66, 64, 77, 1);
+}
+
+.navbar a {
+  text-decoration: none;
+  font-size: 24px;
+  color: rgb(245, 243, 243);
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  font-weight: 500;
+}
+.logout-button {
+  width: 133px;
+  height: 56px;
+  padding: 4px 26px 4px 26px;
+  gap: 10px;
+  border-radius: 13px;
+  border: 1px solid rgba(255, 190, 56, 1);
+  opacity: 0px;
+  color: rgba(255, 190, 56, 1);
+  background-color: transparent;
+  font-size: 24px;
+}
+.navbar h1 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(255, 190, 56, 1);
+}
