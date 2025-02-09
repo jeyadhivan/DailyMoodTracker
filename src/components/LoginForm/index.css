@@ -25,7 +25,6 @@
     rgba(117, 116, 117, 0) 100.42%
   );
 
-  opacity: 0px;
   color: white;
   border-image-source: linear-gradient(
     139.28deg,
@@ -73,7 +72,6 @@
 
   border-radius: 39px;
 
-  opacity: 0px;
   background: rgba(52, 50, 67, 1);
 
   padding: 12px;

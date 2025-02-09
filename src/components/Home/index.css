@@ -1,7 +1,6 @@
 .bg-container {
   background-image: url('https://res.cloudinary.com/dnhlqf4yp/image/upload/v1738048956/BG_wacvrj.png');
   background-size: cover;
-  
 }
 .home-container {
   width: 100%;
@@ -29,7 +28,7 @@ ul {
   grid-template-columns: repeat(7, 1fr);
   width: 100%;
   gap: 0px;
-  opacity: 0px;
+
   font-family: Inter;
   font-size: 20px;
   font-weight: 500;
@@ -100,7 +99,7 @@ ul {
   height: 37px;
   margin: 5px;
   gap: 0px;
-  opacity: 0px;
+
 }
 .date-item:hover {
   background-color: #191c24;
@@ -121,7 +120,7 @@ ul {
   padding: 10px;
   gap: 20px;
   border-radius: 27.29px;
-  opacity: 0px;
+
   background: linear-gradient(
     142.42deg,
     rgba(68, 63, 70, 0.21) 1.79%,
@@ -150,7 +149,7 @@ ul {
   padding: 10px;
   gap: 0px;
   border-radius: 27.29px;
-  opacity: 0px;
+
   background: linear-gradient(
     142.42deg,
     rgba(68, 63, 70, 0.21) 1.79%,
@@ -215,7 +214,7 @@ select {
   top: 48px;
   left: 24px;
   gap: 4px;
-  opacity: 0px;
+
   background: rgba(66, 64, 77, 1);
   border: 1px solid rgba(78, 93, 114, 1);
   padding: 9px 13px 9px 13px;

@@ -2,7 +2,7 @@ import Navbar from '../Navbar'
 import './index.css'
 
 const NotFound = () => (
-  <>
+  <div className="bg-container">
     <Navbar />
     <div className="notfound-card">
       <img
@@ -14,6 +14,6 @@ const NotFound = () => (
         We are sorry, the page you requested could not be found.
       </p>
     </div>
-  </>
+  </div>
 )
 export default NotFound
