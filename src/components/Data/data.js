@@ -32,7 +32,7 @@ export const daysList = [
   {
     id: '3639eb90-a5d5-11ec-b909-0242ac120002',
     day: 'Sat',
-    dayNumber: 7,
+    dayNumber: 0,
   },
 ]
 

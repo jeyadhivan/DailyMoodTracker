@@ -1,4 +1,5 @@
 import {useState} from 'react'
+import {Redirect} from 'react-router-dom'
 import Cookies from 'js-cookie'
 import './index.css'
 
@@ -8,15 +9,21 @@ const LoginForm = ({history}) => {
   const [showPassword, setShowPassword] = useState(false)
   const [error, setError] = useState('')
 
+  const jwtTokens = Cookies.get('jwt_token')
+  if (jwtTokens !== undefined) {
+    return <Redirect to="/" />
+  }
+
   const onSuccess = jwtToken => {
     Cookies.set('jwt_token', jwtToken, {expires: 20})
-    history.push('/')
+    history.replace('/')
   }
 
   const onFailure = errorMsg => {
     setError(errorMsg)
   }
-  const onClickLogin = async () => {
+  const onClickLogin = async e => {
+    e.preventDefault()
     const url = 'https://apis.ccbp.in/login'
     const options = {
       method: 'POST',
@@ -35,7 +42,7 @@ const LoginForm = ({history}) => {
   return (
     <div className="login-container">
       <div className="login-card">
-        <form className="form-card">
+        <form className="form-card" onSubmit={onClickLogin}>
           <h1>Daily Mood Tracker</h1>
           <label htmlFor="username">USERNAME</label>
           <input
@@ -56,12 +63,15 @@ const LoginForm = ({history}) => {
           <div className="forget-password">
             <input
               type="checkbox"
+              id="showPassword"
               className="checkbox"
               onChange={() => setShowPassword(!showPassword)}
             />
-            <p className="password">Show Password</p>
+            <label htmlFor="showPassword" className="password">
+              Show Password
+            </label>
           </div>
-          <button type="button" className="login-button" onClick={onClickLogin}>
+          <button type="submit" className="login-button">
             Login
           </button>
           {error && <p className="error-message">{error}</p>}

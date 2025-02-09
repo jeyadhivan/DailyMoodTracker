@@ -1,12 +1,16 @@
+.bg-container {
+  background-image: url('https://res.cloudinary.com/dnhlqf4yp/image/upload/v1738048956/BG_wacvrj.png');
+  background-size: cover;
+  
+}
 .home-container {
-  padding-left: 50px;
+  width: 100%;
 }
 ul {
   list-style-type: none;
 }
 .home-card h1 {
   color: rgba(255, 190, 56, 1);
-
   font-size: 36px;
   font-weight: 700;
   line-height: 48px;
@@ -16,7 +20,6 @@ ul {
 }
 .dropdowns {
   display: flex;
-
   justify-content: space-between;
   padding-top: 40px;
   gap: 20px;
@@ -25,7 +28,6 @@ ul {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   width: 100%;
-
   gap: 0px;
   opacity: 0px;
   font-family: Inter;
@@ -36,7 +38,6 @@ ul {
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 }
-
 .day-item {
   font-size: 1rem;
   font-weight: bold;
@@ -71,20 +72,18 @@ ul {
   padding: 20px;
 }
 .home {
-  margin-top: 20px;
+  margin: 20px 20px;
+  padding: 50px 20px 50px 10px;
 }
 .carousel-button {
   background-color: transparent;
   border-width: 0px;
   cursor: pointer;
   color: rgba(255, 255, 255, 1);
-
   outline: none;
 }
-
 .date-item {
   background: rgba(52, 50, 67, 1);
-
   border: none;
   border-radius: 8px;
   font-size: 1rem;
@@ -101,21 +100,17 @@ ul {
   height: 37px;
   margin: 5px;
   gap: 0px;
-
   opacity: 0px;
 }
-
 .date-item:hover {
   background-color: #191c24;
   transform: scale(1.05);
 }
-
 .date-item .emoji-icon {
   width: 24px;
   height: 24px;
   margin-left: 5px;
 }
-
 .emoji-selectors {
   display: flex;
   flex-direction: column;
@@ -126,7 +121,6 @@ ul {
   padding: 10px;
   gap: 20px;
   border-radius: 27.29px;
-
   opacity: 0px;
   background: linear-gradient(
     142.42deg,
@@ -139,21 +133,16 @@ ul {
     rgba(19, 18, 18, 0.28) 2.05%,
     rgba(53, 51, 51, 0) 92.82%
   );
-
   backdrop-filter: blur(116px);
-
   -webkit-box-shadow: inset 1px -5px 37px 0px rgba(81, 81, 81, 0.4);
   -moz-box-shadow: inset 1px -5px 37px 0px rgba(81, 81, 81, 0.4);
   box-shadow: inset 1px -5px 37px 0px rgba(81, 81, 81, 0.4);
 }
-
-.count {
-  font-size: 24px;
+.name-day-count {
+  font-size: 48px;
 }
-
 .emoji-selector {
   display: flex;
-
   align-items: center;
   justify-content: center;
   width: 487px;
@@ -161,7 +150,6 @@ ul {
   padding: 10px;
   gap: 0px;
   border-radius: 27.29px;
-
   opacity: 0px;
   background: linear-gradient(
     142.42deg,
@@ -174,14 +162,11 @@ ul {
     rgba(19, 18, 18, 0.28) 2.05%,
     rgba(53, 51, 51, 0) 92.82%
   );
-
   backdrop-filter: blur(116px);
-
   -webkit-box-shadow: inset 1px -5px 37px 0px rgba(81, 81, 81, 0.4);
   -moz-box-shadow: inset 1px -5px 37px 0px rgba(81, 81, 81, 0.4);
   box-shadow: inset 1px -5px 37px 0px rgba(81, 81, 81, 0.4);
 }
-
 .emoji-item {
   display: flex;
   flex-direction: column;
@@ -190,22 +175,17 @@ ul {
   gap: 20px;
   border-width: 0px;
   color: rgba(255, 255, 255, 1);
-
   background-color: transparent;
   cursor: pointer;
-
   font-size: 16px;
   font-weight: 500;
   line-height: 19.36px;
   text-align: center;
 }
-
 .emoji-icon.active {
   transform: scale(1.5);
-
   filter: drop-shadow(2px 4px 6px rgba(194, 192, 192, 0.3));
 }
-
 .emoji-item .emoji-icon {
   width: 32px;
   height: 32px;
@@ -241,10 +221,121 @@ select {
   padding: 9px 13px 9px 13px;
   color: rgba(255, 255, 255, 1);
   border-radius: 8px;
-
   justify-content: space-between;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.08);
 }
 .month-name {
   color: white;
+}
+
+@media (max-width: 768px) {
+  .home-container,
+  .home-card,
+  .home-display {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 10px;
+  }
+
+  .home-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  .calendar-dropdowns {
+  }
+
+  .emoji-selector {
+    order: 1;
+  }
+
+  .calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    width: 400px;
+    order: 1;
+    max-width: 320px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .dateObj {
+    gap: 1px;
+  }
+
+  .date-item {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    width: 35px;
+    height: 55px;
+    font-size: 10px;
+    margin: 2px;
+  }
+
+  .date-item .emoji-icon {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+
+  .month-carousel {
+    width: 100%;
+    max-width: 350px;
+    font-size: 16px;
+  }
+
+  .days-list {
+    font-size: 14px;
+    width: 100%;
+    align-self: flex-start;
+  }
+
+  .emoji-selectors {
+    order: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .emoji-selectors,
+  .emoji-selector {
+    width: 100%;
+    padding: 5px;
+  }
+
+  .name-day-count {
+    font-size: 24px;
+  }
+
+  .dropdowns {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .login-card {
+    width: 95%;
+    max-width: 370px;
+    height: auto;
+    padding-right: 10px;
+    border-radius: 15px;
+    text-align: center;
+    order: 2;
+  }
+
+  .emoji-icon {
+    height: 5px;
+    width: 5px;
+  }
+  .calender-view {
+    width: 350px;
+  }
+  .home {
+    padding-right: 50px;
+  }
 }

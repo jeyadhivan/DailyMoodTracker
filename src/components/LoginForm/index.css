@@ -1,8 +1,10 @@
 .login-container {
-  align-self: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url('https://res.cloudinary.com/dnhlqf4yp/image/upload/v1738048956/BG_wacvrj.png');
+  background-size: cover;
+  height: 100vh;
 }
 
 .login-card {
